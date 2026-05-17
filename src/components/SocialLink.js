@@ -7,7 +7,12 @@ const SocialLink = ({ parentClass, itemClass }) => {
         const { id, href, icon } = link;
         return (
           <li key={id}>
-            <a href={href} target="_blank" className={itemClass}>
+            <a
+              href={href}
+              target="_blank"
+              className={itemClass}
+              rel="noreferrer noopener"
+            >
               <i className={icon}></i>
             </a>
           </li>
